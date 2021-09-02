@@ -577,7 +577,7 @@ aside li:hover{
 
 .card{
     background:var(--lighter-blue);
-    background-image: url("/jayshetty.png");
+    background-image: url("./jayshetty.png");
     background-size: cover;
     background-position:10% 55%;
     background-repeat:no-repeat;
