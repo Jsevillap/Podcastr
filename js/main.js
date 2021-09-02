@@ -31,7 +31,7 @@ const play = document.querySelector("#playButton");
 const disc = document.querySelector(".spinDisc");
 const currentPlay = document.querySelector("#currentPlayTime");
 const timeLeft = document.querySelector("#playTimeLeft");
-const audio = new Audio("/sound.mp3");
+const audio = new Audio("./sound.mp3");
 let playing = false;
 
 

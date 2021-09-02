@@ -242,7 +242,7 @@ category: legacy browsers
 }
 
 html{
-    transition: all 250ms ease-in-out;
+
     height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -861,9 +861,6 @@ aside li:hover{
     margin-top:1rem;
 }
 
-#playButton{
-    transition: all 200ms ease-in-out;
-}
 #playButton:hover{
     cursor:pointer;
 }
