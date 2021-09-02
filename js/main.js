@@ -52,7 +52,7 @@ play.addEventListener("click", () => {
 
 
 });
-
+/*
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -65,3 +65,6 @@ viewport.setAttribute("content", "width=device-width, initial-scale=1.0, maximum
 document.documentElement.style.setProperty("overflow", "auto")
 const metaViewport = document.querySelector("meta[name=viewport]")
 metaViewport.setAttribute("content", "height=" + initialHeight + "px, width=device-width, initial-scale=1.0")
+
+
+metaViewport.setAttribute("content", ‘width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0’) */

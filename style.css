@@ -278,11 +278,22 @@ li{
     list-style: none;
 }
 
+.attribution{
+    position:absolute;
+    transform: rotate(90deg);
+    left:0;
+    margin-left:-158px;
+    color:var(--variant-text-color);
+}
+
+.attribution a{
+    color:var(--accent-color);
+}
 
 
 section{
     width:90vw;
-    height:96vh;
+    height:98vh;
     max-width: 1400px;
     background:var(--dark-blue);
     display: flex;
@@ -944,6 +955,17 @@ aside li:hover{
 
     .controls{
         border-radius: 0;
+    }
+
+    .attribution{
+        position:absolute;
+        transform: rotate(0deg);
+        left:0;
+        right: 0;
+        bottom:0;
+        margin-left:unset;
+        text-align: center;
+        color:var(--variant-text-color);
     }
 
 }
