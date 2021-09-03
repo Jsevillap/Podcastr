@@ -19,7 +19,7 @@ category: global
     box-sizing: border-box;
     scrollbar-color: var(--dark-blue) var(--lighter-blue);    
     scrollbar-width: thin;
-    transition:all 200ms ease; 
+    transition:all 100ms ease; 
 }
 
 
@@ -866,6 +866,7 @@ aside li:hover{
 
 .playerButtons i:nth-child(3){
     font-size:1.5rem;
+    margin-left: 3px;
 }
 
 .controls p{
@@ -970,6 +971,12 @@ aside li:hover{
 
 }
 
+@media screen and (max-width:550px){
+    .popularCard{
+        min-width: 100%;
+    }
+}
+
 @media screen and (max-width:480px){
     .plan{
         display:none;
@@ -979,5 +986,16 @@ aside li:hover{
         padding-left:0.5rem;
         padding-right:0.5rem;
     }
+    .card{
+        padding:0 1.2rem;
+    }
+    .card h2{
+        font-size:2rem;
+    }
+
+    .searchBar{
+        padding:5% 8%;
+    }
+   
 
 }
