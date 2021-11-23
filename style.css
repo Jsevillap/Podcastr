@@ -284,6 +284,7 @@ li{
     left:0;
     margin-left:-158px;
     color:var(--variant-text-color);
+    z-index:10000;
 }
 
 .attribution a{
