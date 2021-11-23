@@ -5,7 +5,9 @@ const
     disc = document.querySelector(".spinDisc"),
     currentPlay = document.querySelector("#currentPlayTime"),
     timeLeft = document.querySelector("#playTimeLeft"),
-    audio = new Audio("./sound.mp3");
+    audio = new Audio("./sound.mp3"),
+    snippetTargetPosition = document.querySelectorAll(".has-snippet"),
+    snippet = document.querySelectorAll(".snippet");
 
 
 let
@@ -37,17 +39,30 @@ const darkMode = () => {
     root.style.setProperty("--themeSwitch-text", "'Light'");
     root.style.setProperty("--shadow-value", " 0 0 0 0 #1e252d3b");
     isDark = true;
-}
+};
 
 const changeTheme = () => {
 
     isDark ? lightMode() : darkMode();
 
-}
+};
 
 //Change the theme
 themeSwitch.addEventListener("click", changeTheme);
 
+
+//Show snippet in the right position
+snippetTargetPosition.forEach(el => {
+
+    el.addEventListener("mouseover", () => {
+        if (document.body.clientWidth <= 1280) {
+            snippet.forEach(snip => {
+                snip.style.top = (el.getBoundingClientRect().top + 17) + "px";
+            });
+
+        }
+    });
+});
 
 
 
