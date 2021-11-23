@@ -254,6 +254,7 @@ body{
     justify-content: center;
     align-items: center;
     color:var(--primary-text-color);
+    overflow: hidden;
 }
 
 p, h5{
@@ -301,7 +302,6 @@ section{
     border-radius:25px;
     box-shadow: var(--shadow-value);
     overflow: hidden;
-    position: relative;
 }
 
 /********Aside Sidebar******/
