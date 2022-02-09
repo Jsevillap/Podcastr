@@ -349,10 +349,12 @@ aside li{
     padding:0.45rem 0;
 }
 
-aside li:hover{
+aside li:hover,
+aside li:focus{
     border-right:3px solid var(--accent-color);
     color:var(--accent-color);
     cursor: pointer;
+    outline:none;
 }
 
 .active{

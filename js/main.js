@@ -57,7 +57,6 @@ snippetTargetPosition.forEach(el => {
     el.addEventListener("mouseover", () => {
 
         if (document.body.clientWidth <= 1280) {
-            console.log(el.getBoundingClientRect());
             snippet.forEach(snip => {
                 snip.style.top = (el.getBoundingClientRect().top + el.getBoundingClientRect().height / 2) + "px";
                 snip.style.left = (el.getBoundingClientRect().right + 3) + "px";
