@@ -203,6 +203,11 @@ category: legacy browsers
 
 
 /**************** Regular CSS **************************/
+
+
+
+
+
 :root{
     --primary-text-color:white;
     --variant-text-color:#a9b0b8;
@@ -213,6 +218,8 @@ category: legacy browsers
     --themeSwitch-text:"Light";
     --shadow-value: 0 0 0 #1e252d3b;
 }
+
+
 ::selection{
     background: var(--accent-color);
     color:white;
@@ -240,6 +247,16 @@ category: legacy browsers
   ::placeholder{
     color:var(--variant-text-color);
 }
+
+
+*[tabindex="0"]:focus,
+input:focus,
+a:focus,
+button:focus {
+    outline:1px solid var(--primary-text-color);
+    outline-offset: 5px;
+} 
+
 
 html{
 
